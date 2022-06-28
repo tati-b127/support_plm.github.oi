@@ -51,23 +51,27 @@ body {
 .header__container {
     display: flex;
     justify-content: space-between;
+    /* justify-content: flex-start; */
     align-items: center;
-    padding: 0 80px;
+    padding: 0 50px;
     height: 100px;
     background-color: var(--color-main);
 }
 .header__logo {
-    width: 120px;
+    width: 100px;
     height: auto;
+    margin-right: 30px;
 }
 .header__title {
     font-size: 28px;
     font-weight: 600;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-right: auto;
 }
 .header__form {
     position: relative;
+    margin-right: 80px;
 }
 .header__input {
     min-width: 500px;
@@ -132,7 +136,7 @@ body {
 .main-menu__btn {
     position: relative;
     width: 100%;
-    padding: 15px 80px;
+    padding: 15px 50px;
     background: var(--color-menu);
     border: none;
     text-align: start;
