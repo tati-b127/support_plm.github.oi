@@ -37,17 +37,6 @@
             <div class="menu__block">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <button class="menu__btn" data-path="access">
-                            <img src="img/access.svg" alt="">
-                            <p class="menu__title">
-                                Доступ к платформе
-                            </p>
-                            <p class="menu__descr">
-                                проблемы при входе в платформу "3DExperience"
-                            </p>
-                        </button>
-                    </li>
-                    <li class="menu__item">
                         <button class="menu__btn" data-path="construction">
                             <img src="img/construction.svg" alt="">
                             <p class="menu__title">
@@ -59,6 +48,16 @@
                         </button>
                     </li>
                     <li class="menu__item">
+                        <button class="menu__btn" data-path="change-action">
+                            <img src="img/change-action.svg" alt="">
+                            <p class="menu__title">
+                                Change Action
+                            </p>
+                            <p class="menu__descr">
+                                проблемы при работе с процессами "Change Action"</p>
+                        </button>
+                    </li>
+                    <li class="menu__item">
                         <button class="menu__btn" data-path="projects-control">
                             <img src="img/projects-control.svg" alt="">
                             <p class="menu__title">
@@ -67,16 +66,6 @@
                             <p class="menu__descr">
                                 проблемы при работе/синхронизации проектов
                             </p>
-                        </button>
-                    </li>
-                    <li class="menu__item">
-                        <button class="menu__btn" data-path="change-action">
-                            <img src="img/change-action.svg" alt="">
-                            <p class="menu__title">
-                                Change Action
-                            </p>
-                            <p class="menu__descr">
-                                проблема при работе с процессами "Change Action"</p>
                         </button>
                     </li>
                     <li class="menu__item">
@@ -98,6 +87,17 @@
                             </p>
                             <p class="menu__descr">
                                 проблемы при работе с процессами "Issue"
+                            </p>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <button class="menu__btn" data-path="access">
+                            <img src="img/access.svg" alt="">
+                            <p class="menu__title">
+                                Доступ к платформе
+                            </p>
+                            <p class="menu__descr">
+                                проблемы при входе в платформу "3DExperience"
                             </p>
                         </button>
                     </li>
@@ -139,12 +139,7 @@
             </div>
         </в>
         <div class="category">
-            <div class="category__group category__access" data-target="access">
-                <ul class="category__list">
-                    <li class="category__item"><a href="" class="category__link">Отправить заявку</a></li>
-                </ul>
-            </div>
-            <div class="category__group category__construction category__group_visible" data-target="construction">
+            <div class="category__group category__construction" data-target="construction">
                 <ul class="category__list">
                     <li class="category__item"><a href="" class="category__link">Проблема с доступом/поиском объекта</a></li>
                     <li class="category__item"><a href="" class="category__link">Проблема открытия объекта</a></li>
@@ -152,13 +147,6 @@
                     <li class="category__item"><a href="" class="category__link">Проблема с чертежами и СП</a></li>
                     <li class="category__item"><a href="" class="category__link">Проблема, связанная с работой функций 3D-моделирования</a></li>
                     <li class="category__item"><a href="" class="category__link">Проблема с ПКИ и материалами</a></li>
-                    <li class="category__item"><a href="" class="category__link">Другое</a></li>
-                </ul>
-            </div>
-            <div class="category__group category__projects-control" data-target="projects-control">
-                <ul class="category__list">
-                    <li class="category__item"><a href="" class="category__link">Запрос на изменение "Owner" объекта</a></li>
-                    <li class="category__item"><a href="" class="category__link">Запрос на удаление объекта</a></li>
                     <li class="category__item"><a href="" class="category__link">Другое</a></li>
                 </ul>
             </div>
@@ -173,40 +161,54 @@
                     <li class="category__item"><a href="" class="category__link">Другое</a></li>
                 </ul>
              </div>
+            <div class="category__group category__projects-control" data-target="projects-control">
+                <ul class="category__list">
+                    <li class="category__item"><a href="" class="category__link">Запрос на изменение "Owner" объекта</a></li>
+                    <li class="category__item"><a href="" class="category__link">Запрос на удаление объекта</a></li>
+                    <li class="category__item"><a href="" class="category__link">Другое</a></li>
+                </ul>
+            </div>
             <div class="category__group category__kanban" data-target="kanban">
                 <ul class="category__list">
                     <li class="category__item"><a href="" class="category__link">Запрос на изменение "Owner" объекта</a></li>
-                    <li class="category__item"><a href="" class="category__link">Настройка доски для нового сотрудника</a></li>
+                    <li class="category__item"><a href="" class="category__link">Настройка Dashboard для нового сотрудника</a></li>
                     <li class="category__item"><a href="" class="category__link">Проблема при работе с вложениями</a></li>
-                    <li class="category__item"><a href="" class="category__link">Консультация нового сотрудника</a></li>
                     <li class="category__item"><a href="" class="category__link">Запрос на создание нового тэга</a></li>
                     <li class="category__item"><a href="" class="category__link">Запрос на удаление объекта</a></li>
+                    <li class="category__item"><a href="" class="category__link">Консультация нового сотрудника</a></li>
                 </ul>
             </div>
             <div class="category__group category__issue" data-target="issue">
                 <ul class="category__list">
-                    <li class="category__item"><a href="" class="category__link">Запрос на изменение жизненного цикла объекта</a></li>
                     <li class="category__item"><a href="" class="category__link">Запрос на изменение "Owner" объекта</a></li>
+                    <li class="category__item"><a href="" class="category__link">Запрос на изменение жизненного цикла объекта</a></li>
                     <li class="category__item"><a href="" class="category__link">Запрос на удаление объекта</a></li>
                     <li class="category__item"><a href="" class="category__link">Другое</a></li>
+                </ul>
+            </div>
+            <div class="category__group category__access" data-target="access">
+                <ul class="category__list">
+                    <li class="category__item"><a href="" class="category__link">Заполнить форму</a></li>
                 </ul>
             </div>
             <div class="category__group category__licenses" data-target="licenses">
                 <ul class="category__list">
                     <li class="category__item"><a href="" class="category__link">Запрос на добавление/подключение новой лицензии</a></li>
                     <li class="category__item"><a href="" class="category__link">Проблемы с текущей лицензией</a></li>
-                    <li class="category__item"><a href="" class="category__link">IGA Gost Drafting</a></li>
+                    <li class="category__item"><a href="" class="category__link">Проблемы с IGA GOST Drafting</a></li>
                     <li class="category__item"><a href="" class="category__link">Другое</a></li>
                 </ul>
             </div>
             <div class="category__group category__education" data-target="education">
                 <ul class="category__list">
-                    <li class="category__item"><a href="" class="category__link">Отправить заявку</a></li>
+                    <li class="category__item"><a href="" class="category__link">Базовй курс 3DExperience</a></li>
+                    <li class="category__item"><a href="" class="category__link">Базовй курс Kanban</a></li>
+                    <li class="category__item"><a href="" class="category__link">Базовй курс Change Action</a></li>
                 </ul>
             </div>
             <div class="category__group category__suggestions" data-target="suggestions">
                 <ul class="category__list">
-                    <li class="category__item"><a href="" class="category__link">Отправить заявку</a></li>
+                    <li class="category__item"><a href="" class="category__link">Заполнить форму</a></li>
                 </ul>
             </div>
         </div>
