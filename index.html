@@ -19,7 +19,7 @@
         <div class="container header__container">
             <img class="header__logo" src="img/ust-logo.svg" alt="Логотип UST">
             <h1 class="header__title">Техническая поддержка 3DExperience</h1>
-            <form class="header__form" action="" method="post">
+            <form class="header__form" action="https://postman-echo.com/post" method="post">
                 <input class="header__input" type="text" name="" id="">
                 <button class="header__btn btn" type="submit">
                     <img src="img/search.svg" alt="Найти">
@@ -213,22 +213,28 @@
             </div>
         </div>
         <div class="request">
-            <h2 class="request__category">Конструирование</h2>
-            <div class="request__block request__block_theme">
-                <h3 class="request__title request__title_theme">Тема</h3>
-                <p class="request__theme-descr">Проблема при конструировании</p>
-            </div>
-            <div class="request__block request__block_object">
-                <h3 class="request__title request__title_info-object">Информация об объекте</h3>
-                <input class="request__input request__input-object" type="text" name="object" id="object">
-            </div>
-            <div class="request__block request__block_problem">
-                <h3 class="request__title request__title_info-problem">Информация о проблеме</h3>
-                <input class="request__input request__input-file" type="file" name="file" id="file">
-                <input class="request__input request__input-problem" type="text" name="problem" id="problem">
+            <form class="request__form" action="https://postman-echo.com/post" method="post">
+            <input class="request__category" type="text" name="title" readonly value="Конструирование"></input>
+            <div class="request__content">
+                    <div class="request__block request__block_theme">
+                        <h3 class="request__title request__title_theme">Тема</h3>
+                        <input class="request__theme-descr" type="text" name="theme" readonly value="Проблема при конструировании"></input>
+                    </div>
+                    <div class="request__block request__block_object">
+                        <h3 class="request__title request__title_info-object">Информация об объекте</h3>
+                        <input class="request__input request__input-object" type="text" name="object" id="object" required>
+                    </div>
+                    <div class="request__block request__block_problem">
+                        <h3 class="request__title request__title_info-problem">Информация о проблеме</h3>
+                        <input class="request__input request__input-file" type="file" name="file" id="file" multiple="multiple" value="">
+                        <textarea class="request__input request__input-problem" type="text" name="problem" id="problem" placeholder="Введите сообщение" required></textarea>
+                    </div>
+                <div class="request__drop">
+                </div>
             </div>
             <button class="request__btn request__btn_reset">Назад</button>
             <button class="request__btn request__btn_submit">Отправить заявку</button>
+        </form>
         </div>
     </main>
 </body>
