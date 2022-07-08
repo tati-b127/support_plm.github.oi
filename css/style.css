@@ -84,7 +84,7 @@ body {
     border: none;
     background-color: #fff;
     font-size: 24px;
-    padding: 0 20px;
+    padding: 0 20px 0 40px;
     outline: none;
     color: var(--color-descr);
 }
@@ -94,16 +94,15 @@ body {
 .header__btn {
     position: absolute;
     content: "";
-    top: 17%;
     width: 25px;
     height: 25px;
-    right: 15px;
+    left: 0;
     border: none;
     background: transparent;
 }
-.header__btn img {
-    width: 25px;
-    height: 25px;
+.header__btn svg {
+    width: inherit;
+    height: inherit;
 }
 .header__nav {
     display: flex;
@@ -242,9 +241,6 @@ input,
 button {
     font-family: 'Inter', Aria, sans-serif;
 }
-.visible {
-    display: none;
-}
 .request {
     position: absolute;
     top: 0;
@@ -254,6 +250,9 @@ button {
     height: calc(100vh - 100px);
     padding: 50px;
 }
+.visible {
+    visibility: hidden;}
+    
 .request__category {
     width: -webkit-fill-available;
     font-size: 20px;

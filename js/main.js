@@ -18,11 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // MESSAGE
 
-// document.querySelectorAll('.category__link').forEach(function (link){
-//     link.addEventListener('click', function (request) {
-//     let category = document.querySelector('.category__link');
-//     let title = document.querySelector('[data-target]');
-    // document.querySelector('.request').classList.remove('visible');
+document.querySelectorAll('.category__link').forEach(function (link){
+    link.addEventListener('click', function (request) {
+    // let category = document.querySelector('.category__link');
+    // let title = document.querySelector('[data-target]');
+    this.querySelector.classList.add('visible');
+    document.querySelector('.request').classList.toggle('visible');
 
-// })
-// })
+})
+})

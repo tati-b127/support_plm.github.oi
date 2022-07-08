@@ -26,7 +26,10 @@
             <form class="header__form" action="https://postman-echo.com/post" method="post">
                 <input class="header__input" type="search" name="" id="">
                 <button class="header__btn btn" type="submit">
-                    <img src="img/search.svg" alt="Найти">
+                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="8.88281" height="1.63172" transform="matrix(0.643813 0.765183 -0.786459 0.617642 17.75 17.5331)" fill="#A29FA5"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.90199 18.8347C14.2173 19.2799 17.9148 16.1494 18.3362 12.0644C18.7576 7.97938 15.777 4.16008 11.4617 3.71494C7.14639 3.26979 3.44885 6.4002 3.02745 10.4852C2.60606 14.5703 5.5867 18.3896 9.90199 18.8347ZM9.70703 20.7247C14.926 21.263 19.5933 17.4686 20.1317 12.2496C20.6701 7.03062 16.8757 2.36334 11.6566 1.82497C6.43763 1.28659 1.77035 5.081 1.23198 10.3C0.693609 15.519 4.48802 20.1863 9.70703 20.7247Z" fill="#A29FA5"/>
+                        </svg>
                 </button>
             </form>
             <div class="header__nav">
@@ -235,7 +238,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="request">
+            <div class="request visible">
                 <form class="request__form" action="https://postman-echo.com/post" method="post">
                     <div class="request__block">
                         <h3 class="request__title request__title_category">Категория</h3>
@@ -249,19 +252,19 @@
                                 value="Проблема при конструировании"></input>
                         </div>
                         <div class="request__block request__block_object">
-                            <h3 class="request__title request__title_info-object">Информация об объекте</h3>
-                            <input class="request__input request__input-object" type="text" name="object" id="object"
-                                required>
+                            <h3 class="request__title request__title_info-object">Идентификатор объекта</h3>
+                            <!-- <input class="request__input request__input-object" type="text" 
+                                required> -->
                         </div>
-                        <input class="form-control" type="text" aria-label="default input example" required>
+                        <input class="form-control" type="text" aria-label="default input example" name="object" id="object" required>
                         <div class="request__block request__block_problem">
                             <h3 class="request__title request__title_info-problem">Информация о проблеме</h3>
-                            <textarea class="request__input request__input-problem" type="text" name="problem"
-                                id="problem" placeholder="Введите сообщение" required></textarea>
+                            <!-- <textarea class="request__input request__input-problem" type="text" name="problem"
+                                id="problem" placeholder="Введите сообщение" required></textarea> -->
                         </div>
                         <div class="mb-3">
                             <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-                            <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="5" required></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="7" required></textarea>
                           </div>
                         <div class="request__block request__block_file mb-5">
                             <!-- <label for="formFileMultiple" class="form-label"></label> -->
