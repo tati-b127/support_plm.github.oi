@@ -245,7 +245,7 @@
                     <div class="request__content">
                         <div class="request__block request__block_theme">
                             <h3 class="request__title request__title_theme">Тема</h3>
-                            <input class="request__theme-descr" type="text" name="theme" readonly
+                            <input class="request__theme-descr" type="text" name="theme" readonly disabled
                                 value="Проблема при конструировании"></input>
                         </div>
                         <div class="request__block request__block_object">
@@ -253,7 +253,7 @@
                             <input class="request__input request__input-object" type="text" name="object" id="object"
                                 required>
                         </div>
-                        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+                        <input class="form-control" type="text" aria-label="default input example" required>
                         <div class="request__block request__block_problem">
                             <h3 class="request__title request__title_info-problem">Информация о проблеме</h3>
                             <textarea class="request__input request__input-problem" type="text" name="problem"
@@ -261,11 +261,11 @@
                         </div>
                         <div class="mb-3">
                             <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="5" required></textarea>
                           </div>
                         <div class="request__block request__block_file mb-5">
                             <!-- <label for="formFileMultiple" class="form-label"></label> -->
-                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                            <input class="form-control" type="file" name="file" id="formFileMultiple" multiple>
                         </div>
                     </div>
                     <button class="request__btn request__btn_reset" type="reset">Назад</button>
