@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" defer
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js" defer></script>
     <title>Техническая поддержка 3DExperience</title>
 </head>
 
@@ -24,12 +24,16 @@
             <img class="header__logo" src="img/ust-logo.svg" alt="Логотип UST">
             <h1 class="header__title">Техническая поддержка 3DExperience</h1>
             <form class="header__form" action="https://postman-echo.com/post" method="post">
-                <input class="header__input" type="search" name="" id="">
+                <input class="header__input" id type="search" name>
                 <button class="header__btn btn" type="submit">
                     <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="8.88281" height="1.63172" transform="matrix(0.643813 0.765183 -0.786459 0.617642 17.75 17.5331)" fill="#A29FA5"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.90199 18.8347C14.2173 19.2799 17.9148 16.1494 18.3362 12.0644C18.7576 7.97938 15.777 4.16008 11.4617 3.71494C7.14639 3.26979 3.44885 6.4002 3.02745 10.4852C2.60606 14.5703 5.5867 18.3896 9.90199 18.8347ZM9.70703 20.7247C14.926 21.263 19.5933 17.4686 20.1317 12.2496C20.6701 7.03062 16.8757 2.36334 11.6566 1.82497C6.43763 1.28659 1.77035 5.081 1.23198 10.3C0.693609 15.519 4.48802 20.1863 9.70703 20.7247Z" fill="#A29FA5"/>
-                        </svg>
+                        <rect width="8.88281" height="1.63172"
+                            transform="matrix(0.643813 0.765183 -0.786459 0.617642 17.75 17.5331)" fill="#A29FA5">
+                        </rect>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.90199 18.8347C14.2173 19.2799 17.9148 16.1494 18.3362 12.0644C18.7576 7.97938 15.777 4.16008 11.4617 3.71494C7.14639 3.26979 3.44885 6.4002 3.02745 10.4852C2.60606 14.5703 5.5867 18.3896 9.90199 18.8347ZM9.70703 20.7247C14.926 21.263 19.5933 17.4686 20.1317 12.2496C20.6701 7.03062 16.8757 2.36334 11.6566 1.82497C6.43763 1.28659 1.77035 5.081 1.23198 10.3C0.693609 15.519 4.48802 20.1863 9.70703 20.7247Z"
+                            fill="#A29FA5"></path>
+                    </svg>
                 </button>
             </form>
             <div class="header__nav">
@@ -45,7 +49,7 @@
                 <ul class="menu__list">
                     <li class="menu__item">
                         <button class="menu__btn" data-path="construction">
-                            <img src="img/construction.svg" alt="">
+                            <img src="img/construction.svg" alt>
                             <p class="menu__title">
                                 Конструирование
                             </p>
@@ -56,7 +60,7 @@
                     </li>
                     <li class="menu__item">
                         <button class="menu__btn" data-path="change-action">
-                            <img src="img/change-action.svg" alt="">
+                            <img src="img/change-action.svg" alt>
                             <p class="menu__title">
                                 Change Action
                             </p>
@@ -66,7 +70,7 @@
                     </li>
                     <li class="menu__item">
                         <button class="menu__btn" data-path="projects-control">
-                            <img src="img/projects-control.svg" alt="">
+                            <img src="img/projects-control.svg" alt>
                             <p class="menu__title">
                                 Управление проектами
                             </p>
@@ -77,7 +81,7 @@
                     </li>
                     <li class="menu__item">
                         <button class="menu__btn" data-path="kanban">
-                            <img src="img/kanban.svg" alt="">
+                            <img src="img/kanban.svg" alt>
                             <p class="menu__title">
                                 Kanban
                             </p>
@@ -88,7 +92,7 @@
                     </li>
                     <li class="menu__item">
                         <button class="menu__btn" data-path="issue">
-                            <img src="img/issue.svg" alt="">
+                            <img src="img/issue.svg" alt>
                             <p class="menu__title">
                                 Issue
                             </p>
@@ -99,7 +103,7 @@
                     </li>
                     <li class="menu__item">
                         <button class="menu__btn" data-path="access">
-                            <img src="img/access.svg" alt="">
+                            <img src="img/access.svg" alt>
                             <p class="menu__title">
                                 Доступ к платформе
                             </p>
@@ -110,7 +114,7 @@
                     </li>
                     <li class="menu__item">
                         <button class="menu__btn" data-path="licenses">
-                            <img src="img/licenses.svg" alt="">
+                            <img src="img/licenses.svg" alt>
                             <p class="menu__title">
                                 Лицензии
                             </p>
@@ -122,7 +126,7 @@
                     </li>
                     <li class="menu__item">
                         <button class="menu__btn" data-path="education">
-                            <img src="img/education.svg" alt="">
+                            <img src="img/education.svg" alt>
                             <p class="menu__title">
                                 Обучение
                             </p>
@@ -133,7 +137,7 @@
                     </li>
                     <li class="menu__item">
                         <button class="menu__btn" data-path="suggestions">
-                            <img src="img/suggestions.svg" alt="">
+                            <img src="img/suggestions.svg" alt>
                             <p class="menu__title">
                                 Предложения
                             </p>
@@ -144,119 +148,243 @@
                     </li>
                 </ul>
             </div>
-            </в>
+
             <div class="category">
                 <div class="category__group category__construction" data-target="construction">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Проблема с доступом/поиском
-                                объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблема открытия объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблема сохранения объекта</a>
+                        <li class="category__item">
+                            <a class="category__link" name="Конструирование">Проблема с
+                                доступом/поиском объекта
+                            </a>
                         </li>
-                        <li class="category__item"><a href="" class="category__link">Проблема с чертежами и СП</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблема, связанная с работой
-                                функций 3D-моделирования</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблема с ПКИ и материалами</a>
+                        <li class="category__item">
+                            <a class="category__link" name="Конструирование">Проблема открытия объекта
+                            </a>
                         </li>
-                        <li class="category__item"><a href="" class="category__link">Другое</a></li>
+                        <li class="category__item">
+                            <a class="category__link" name="Конструирование">Проблема сохранения
+                                объекта</a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Конструирование">Проблема с чертежами
+                                и СП
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Конструирование">Проблема, связанная
+                                с работой
+                                функций 3D-моделирования
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Конструирование">Проблема с ПКИ и
+                                материалами</a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Конструирование">Другое
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category__group category__change-action" data-target="change-action">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Запрос на удаление недействительных
-                                связей (Cannot be found)</a></li>
-                        <li class="category__item"><a href="" class="category__link">Запрос на исправление структуры
-                                объектов</a></li>
-                        <li class="category__item"><a href="" class="category__link">Запрос на продление срока
-                                согласования</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблема при генерации ARCHDOC
-                                неправильной версии</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблема с согласованием</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблема с запуском</a></li>
-                        <li class="category__item"><a href="" class="category__link">Другое</a></li>
+                        <li class="category__item">
+                            <a class="category__link" name="Change Action">Запрос на удаление
+                                недействительных связей (Cannot be found)
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Change Action">Запрос на исправление
+                                структуры
+                                объектов
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Change Action">Запрос на продление
+                                срока
+                                согласования
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Change Action">Проблема при генерации
+                                ARCHDOC
+                                неправильной версии
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Change Action">Проблема с
+                                согласованием
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Change Action">Проблема с
+                                запуском
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Change Action">Другое
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category__group category__projects-control" data-target="projects-control">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Запрос на изменение "Owner"
-                                объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Запрос на удаление объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Другое</a></li>
+                        <li class="category__item">
+                            <a class="category__link" name="Управление проектами">Запрос на
+                                изменение "Owner"
+                                объекта
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Управление проектами">Запрос на
+                                удаление объекта
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Управление проектами">Другое
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category__group category__kanban" data-target="kanban">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Запрос на изменение "Owner"
-                                объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Настройка Dashboard для нового
-                                сотрудника</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблема при работе с
-                                вложениями</a></li>
-                        <li class="category__item"><a href="" class="category__link">Запрос на создание нового тэга</a>
+                        <li class="category__item">
+                            <a class="category__link" name="Kanban">Запрос на изменение "Owner"
+                                объекта
+                            </a>
                         </li>
-                        <li class="category__item"><a href="" class="category__link">Запрос на удаление объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Консультация нового сотрудника</a>
+                        <li class="category__item">
+                            <a class="category__link" name="Kanban">Настройка Dashboard для
+                                нового
+                                сотрудника
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Kanban">Проблема при работе с
+                                вложениями
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Kanban">Запрос на создание нового
+                                тега</a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Kanban">Запрос на удаление
+                                объекта
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Kanban">Консультация нового
+                                сотрудника</a>
                         </li>
                     </ul>
                 </div>
                 <div class="category__group category__issue" data-target="issue">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Запрос на изменение "Owner"
-                                объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Запрос на изменение жизненного
-                                цикла объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Запрос на удаление объекта</a></li>
-                        <li class="category__item"><a href="" class="category__link">Другое</a></li>
+                        <li class="category__item">
+                            <a class="category__link" name="Issue">Запрос на изменение "Owner"
+                                объекта
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Issue">Запрос на изменение жизненного
+                                цикла объекта
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Issue">Запрос на удаление объекта</a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Issue">Другое
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category__group category__access" data-target="access">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Заполнить форму</a></li>
+                        <li class="category__item">
+                            <a class="category__link" name="Доступ к платформе">Заполнить
+                                форму
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category__group category__licenses" data-target="licenses">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Запрос на добавление/подключение
-                                новой лицензии</a></li>
-                        <li class="category__item"><a href="" class="category__link">Проблемы с текущей лицензией</a>
+                        <li class="category__item">
+                            <a class="category__link" name="Лицензии">Запрос на
+                                добавление/подключение
+                                новой лицензии
+                            </a>
                         </li>
-                        <li class="category__item"><a href="" class="category__link">Проблемы с IGA GOST Drafting</a>
+                        <li class="category__item">
+                            <a class="category__link" name="Лицензии">Проблемы с текущей
+                                лицензией</a>
                         </li>
-                        <li class="category__item"><a href="" class="category__link">Другое</a></li>
+                        <li class="category__item">
+                            <a class="category__link" name="Лицензии">Проблемы с IGA GOST
+                                Drafting</a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Лицензии">Другое
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category__group category__education" data-target="education">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Базовй курс 3DExperience</a></li>
-                        <li class="category__item"><a href="" class="category__link">Базовй курс Kanban</a></li>
-                        <li class="category__item"><a href="" class="category__link">Базовй курс Change Action</a></li>
+                        <li class="category__item">
+                            <a class="category__link" name="Обучение">Базовй курс
+                                3DExperience
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Обучение">Базовй курс Kanban
+
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a class="category__link" name="Обучение">Базовй курс Change
+                                Action
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="category__group category__suggestions" data-target="suggestions">
                     <ul class="category__list">
-                        <li class="category__item"><a href="" class="category__link">Заполнить форму</a></li>
+                        <li class="category__item">
+                            <a class="category__link" name="Предложения">Заполнить форму
+
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="request visible">
+            <div class="request hidden">
                 <form class="request__form" action="https://postman-echo.com/post" method="post">
                     <div class="request__block">
                         <h3 class="request__title request__title_category">Категория</h3>
-                        <input class="request__category" type="text" name="category" readonly disabled
-                            value="Конструирование"></input>
+                        <input class="request__category" type="text" name="category" readonly="readonly"
+                            value="Конструирование">
                     </div>
                     <div class="request__content">
                         <div class="request__block request__block_theme">
                             <h3 class="request__title request__title_theme">Тема</h3>
-                            <input class="request__theme-descr" type="text" name="theme" readonly disabled
-                                value="Проблема при конструировании"></input>
+                            <input class="request__theme-descr" type="text" name="theme" readonly="readonly"
+                                value="Проблема при конструировании">
                         </div>
                         <div class="request__block request__block_object">
                             <h3 class="request__title request__title_info-object">Идентификатор объекта</h3>
                             <!-- <input class="request__input request__input-object" type="text" 
                                 required> -->
                         </div>
-                        <input class="form-control" type="text" aria-label="default input example" name="object" id="object" required>
+                        <input class="form-control" id="object" aria-label="default input example" type="text"
+                            name="object" required>
                         <div class="request__block request__block_problem">
                             <h3 class="request__title request__title_info-problem">Информация о проблеме</h3>
                             <!-- <textarea class="request__input request__input-problem" type="text" name="problem"
@@ -264,17 +392,19 @@
                         </div>
                         <div class="mb-3">
                             <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-                            <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="7" required></textarea>
-                          </div>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="7"
+                                required></textarea>
+                        </div>
                         <div class="request__block request__block_file mb-5">
                             <!-- <label for="formFileMultiple" class="form-label"></label> -->
-                            <input class="form-control" type="file" name="file" id="formFileMultiple" multiple>
+                            <input class="form-control" id="formFileMultiple" type="file" name="file" multiple>
                         </div>
                     </div>
                     <button class="request__btn request__btn_reset" type="reset">Назад</button>
                     <button class="request__btn request__btn_submit" type="submit">Отправить заявку</button>
                 </form>
             </div>
+        </div>
     </main>
 </body>
 
