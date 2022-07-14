@@ -1,88 +1,45 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     document.querySelectorAll('.menu__btn').forEach(function (tabLink) {
-//         tabLink.addEventListener('click', function (event) {
-//             const path = event.currentTarget.dataset.path;
-//             document.querySelectorAll('.menu__btn').forEach(function (link) {
-//                 link.classList.remove('menu__btn_active')
-//             });
-//             event.currentTarget.classList.add('menu__btn_active');
-//             document.querySelectorAll('.category__group').forEach(function (tabContent) {
-//                 tabContent.classList.remove('category__group_visible')
-//             });
-//             document.querySelector(`[data-target="${path}"]`).classList.add('category__group_visible');
-//         });
-//     });
+document.addEventListener("DOMContentLoaded", function() {
 
-// });
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.menu__btn').forEach(function (tabLink) {
-        tabLink.addEventListener('click', function (event) {
-            const path = event.currentTarget.dataset.path;
-            console.log(path)
-            document.querySelectorAll('.menu__btn').forEach(function (link) {
-                link.classList.remove('menu__btn_active')
-            });
-            document.querySelector('.request').classList.add('hidden')
-            event.currentTarget.classList.add('menu__btn_active');
-            document.querySelectorAll('.category__group').forEach(function (tabContent) {
-                tabContent.classList.remove('category__group_visible');
-                // tabContent.addEventListener('click', function(e){
+    const
+        menuBtns = document.querySelectorAll('.menu__btn'),
+        categoryGroups = document.querySelectorAll('.category__group'),
+        categoryLinks = document.querySelectorAll('.category__link'),
+        requestForm = document.querySelector('.request'),
+        inputReset = document.querySelectorAll('.form-control');
 
-                //     let a = e.getAttribute('data-target');
-                //     console.log(a)
-                // })
-            });
-            document.querySelector(`[data-target="${path}"]`).classList.add('category__group_visible');
-        });
-    });
-    document.querySelectorAll('.category__link').forEach(function (link) {
-        link.addEventListener('click', function (){
-            let text = this.textContent
-            console.log(text)
-            document.querySelector('.category__group_visible').classList.toggle('category__group_visible');
-            document.querySelector('.request').classList.toggle('hidden');
-            let categor = this.getAttribute('name')
-            // let atr = categor.getAttribute('data-target')
-            console.log(categor)
-            document.querySelector('.request__category').setAttribute('value', categor);
-            document.querySelector('.request__theme-descr').setAttribute('value', text)
+
+    menuBtns.forEach(tabLink => {
+        tabLink.addEventListener('click', function(event) {
+            menuBtns.forEach(resetSelect => {
+                resetSelect.classList.remove('menu__btn_active');
+                requestForm.classList.add('hidden');
+                for (i of inputReset) i.value = '';
             })
+            let path = event.currentTarget.dataset.path;
+            event.currentTarget.classList.add('menu__btn_active');
+            categoryGroups.forEach(resetContent => {
+                resetContent.classList.remove('category__group_visible')
+            })
+            document.querySelector(`[data-target="${path}"]`).classList.add("category__group_visible");
         })
-    });
-    
+    })
+    categoryLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            let
+                theme = this.outerText,
+                parent = this.parentElement.parentElement.parentElement,
+                category = this.getAttribute('name');
 
+            for (i of inputReset) i.value = '';
+            requestForm.classList.remove('hidden');
+            parent.classList.remove('category__group_visible');
+            document.querySelector('.request__category').setAttribute('value', category);
+            document.querySelector('.request__theme-descr').setAttribute('value', theme);
 
-    
-
-
-// MESSAGE
-
-
-// document.querySelectorAll('.category__group').forEach(function(group){
-    
-//     let a = group.getAttribute('data-target')
-//     console.log(a)
-// })
-// document.querySelectorAll('.category__link').forEach(function (link) {
-//     link.addEventListener('click', function (e){
-//         let text = this.textContent
-//         console.log(text)
-//     })
-// });
-
-// let array = [a, text]
-// console.log(array)
-
-// function (asd) {
-//     links.addEventListener('click', function(getAttr) {
-//         let attr = getAttr.textContent;
-//         console.log(attr);
-//     })
-
-// }
-    // let category = document.querySelector('.category__link');
-    // let title = document.querySelector('[data-target]');
-    // this.querySelector.classList.add('visible');
-    // document.querySelector('.request').classList.remove('visible');
-
-
+            document.querySelector('.request__btn_reset').addEventListener("click", function(resetForm) {
+                requestForm.classList.add('hidden');
+            })
+            parent.classList.add('category__group_visible');
+        })
+    })
+})
