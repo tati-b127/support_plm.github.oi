@@ -75,6 +75,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-right: auto;
+    margin-bottom: 0;
 }
 
 .header__form {
@@ -164,11 +165,10 @@ body {
     background: var(--color-menu);
     border: none;
     text-align: start;
-    transition: background 0.7s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 .menu__btn:hover {
-    color: #006eff;
     background: var(--linear-bg);
 }
 
