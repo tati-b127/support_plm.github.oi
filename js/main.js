@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
         requestForm = document.querySelector('.request'),
         inputReset = document.querySelectorAll('.form-control'),
         resetMenu = document.querySelector('.reset');
-    console.log(resetMenu)
-
 
     menuBtns.forEach(tabLink => {
         tabLink.addEventListener('click', function(event) {

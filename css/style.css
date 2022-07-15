@@ -63,10 +63,18 @@ body {
     background-color: var(--color-main);
 }
 
+.header__link {
+    margin-right: 30px;
+}
+
+.header__link:focus-visible {
+    outline: 1px solid var(--color-menu);
+    border: none;
+}
+
 .header__logo {
     width: 100px;
     height: auto;
-    margin-right: 30px;
 }
 
 .header__title {
@@ -89,11 +97,16 @@ body {
     min-height: 40px;
     border-radius: 10px;
     border: none;
-    background-color: #fff;
+    background: var(--color-menu);
     font-size: 20px;
     padding: 0 15px 0 50px;
     outline: none;
     color: var(--color-descr);
+    transition: var(--transition-bg-03s);
+}
+
+.header__input:focus-visible {
+    background: #fff;
 }
 
 .btn {
@@ -113,6 +126,13 @@ body {
 .header__btn svg {
     width: inherit;
     height: inherit;
+}
+
+.header__btn:hover svg rect,
+.header__btn:hover svg path,
+.header__btn:focus-visible svg rect,
+.header__btn:focus-visible svg path {
+    fill: var(--color-descr);
 }
 
 .header__nav {
@@ -173,6 +193,12 @@ body {
     background: var(--linear-bg);
 }
 
+.menu__btn:focus-visible {
+    background: var(--linear-bg);
+    border: none;
+    outline: none;
+}
+
 .menu__btn.menu__btn_active {
     background: var(--linear-bg);
 }
@@ -223,13 +249,11 @@ body {
     padding: 25px 0;
     background: #f6f8fa;
     left: -100%;
-    visibility: hidden;
     transition: left 0.3s ease-in-out;
 }
 
 .category__group_visible {
     left: 0;
-    visibility: visible;
 }
 
 .category__list {
@@ -291,7 +315,7 @@ button {
 }
 
 .request__category {
-    width: -webkit-fill-available;
+    width: 100%;
     font-size: 20px;
     line-height: 40px;
     font-weight: 400;
@@ -329,7 +353,7 @@ button {
 }
 
 .request__theme-descr {
-    width: -webkit-fill-available;
+    width: 100%;
     font-size: 20px;
     line-height: 40px;
     background-color: var(--color-main);
@@ -353,8 +377,12 @@ button {
     background-color: transparent;
     color: var(--color-main);
     min-width: 200px;
-    margin-right: 30px;
     transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.request__btn:focus-visible {
+    border: none;
+    outline: none;
 }
 
 .request__btn_submit {
@@ -362,12 +390,18 @@ button {
     color: #fff;
 }
 
-.request__btn_submit:hover {
+.request__btn_submit:hover,
+.request__btn_submit:focus-visible {
     border: 1px solid var(--color-descr);
     background: var(--color-descr);
 }
 
-.request__btn_reset:hover {
+.request__btn_reset {
+    margin-right: 30px;
+}
+
+.request__btn_reset:hover,
+.request__btn_reset:focus-visible {
     border: 1px solid var(--color-descr);
     color: var(--color-descr);
 }

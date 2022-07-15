@@ -18,7 +18,9 @@
 <body>
     <header class="header container-content">
         <div class=" header__container">
-            <img class="header__logo" src="img/ust-logo.svg" alt="Логотип UST">
+            <a class="header__link" href="index.html">
+                <img class="header__logo" src="img/ust-logo.svg" alt="Логотип UST">
+            </a>
             <h1 class="header__title">Техническая поддержка 3DExperience</h1>
             <form class="header__form" action="https://postman-echo.com/post" method="post">
                 <input class="header__input" id type="search" name>
@@ -294,14 +296,14 @@
             </div>
             <div class="request hidden">
                 <form class="request__form" action="https://postman-echo.com/post" method="post">
-                    <div class="request__block">
-                        <h3 class="request__title request__title_category">Категория</h3>
-                        <input class="request__category input-readonly" type="text" name="category" readonly="readonly" value="">
-                    </div>
                     <div class="request__content">
+                        <div class="request__block">
+                            <h3 class="request__title request__title_category">Категория</h3>
+                            <input class="request__category input-readonly" type="text" name="category" readonly="readonly" value="" tabindex="-1">
+                        </div>
                         <div class="request__block request__block_theme">
                             <h3 class="request__title request__title_theme">Тема</h3>
-                            <input class="request__theme-descr input-readonly" type="text" name="theme" readonly="readonly" value="">
+                            <input class="request__theme-descr input-readonly" type="text" name="theme" readonly="readonly" value="" tabindex="-1">
                         </div>
                         <div class="request__block request__block_object">
                             <h3 class="request__title request__title_info-object">Идентификатор объекта</h3>
