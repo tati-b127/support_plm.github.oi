@@ -48,7 +48,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -139,6 +139,7 @@ body {
 
 .menu {
     display: flex;
+    position: relative;
     min-height: calc(100vh - 100px);
     background: #f9faff;
 }
@@ -212,6 +213,7 @@ body {
     display: inline-block;
     position: relative;
     width: 40%;
+    z-index: 50;
 }
 
 .category__group {
@@ -338,15 +340,8 @@ button {
     margin-bottom: 10px;
 }
 
-.request__input {
-    font-size: 20px;
-    color: var(--color-descr);
-    border: none;
-    border-radius: 10px;
-    min-width: 50%;
-    background: #e2e3e9;
+#formObject {
     margin-bottom: 10px;
-    padding: 10px 20px;
 }
 
 .request__btn {
@@ -373,12 +368,20 @@ button {
 }
 
 .request__btn_reset:hover {
-    /* background: var(--color-main);
-    color: #fff; */
     border: 1px solid var(--color-descr);
     color: var(--color-descr);
 }
 
 .request__block_file {
     margin-bottom: 30px;
+}
+
+.reset {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9faff;
 }

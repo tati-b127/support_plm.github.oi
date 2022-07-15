@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
         categoryGroups = document.querySelectorAll('.category__group'),
         categoryLinks = document.querySelectorAll('.category__link'),
         requestForm = document.querySelector('.request'),
-        inputReset = document.querySelectorAll('.form-control');
+        inputReset = document.querySelectorAll('.form-control'),
+        resetMenu = document.querySelector('.reset');
+    console.log(resetMenu)
 
 
     menuBtns.forEach(tabLink => {
@@ -41,5 +43,14 @@ document.addEventListener("DOMContentLoaded", function() {
             })
             parent.classList.add('category__group_visible');
         })
+    })
+    resetMenu.addEventListener('click', function() {
+        for (i of categoryGroups) {
+            i.classList.remove('category__group_visible')
+        }
+        for (i of menuBtns) {
+            i.classList.remove('menu__btn_active')
+        }
+        requestForm.classList.add('hidden')
     })
 })
