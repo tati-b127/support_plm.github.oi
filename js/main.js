@@ -38,17 +38,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
             document.querySelector('.request__btn_reset').addEventListener("click", function(resetForm) {
                 requestForm.classList.add('hidden');
-            })
+            });
             parent.classList.add('category__group_visible');
-        })
-    })
+        });
+    });
     resetMenu.addEventListener('click', function() {
-        for (i of categoryGroups) {
-            i.classList.remove('category__group_visible')
-        }
-        for (i of menuBtns) {
-            i.classList.remove('menu__btn_active')
-        }
-        requestForm.classList.add('hidden')
-    })
-})
+        if (requestForm.classList.contains('hidden')) {
+            for (i of categoryGroups) {
+                i.classList.remove('category__group_visible');
+            };
+            for (i of menuBtns) {
+                i.classList.remove('menu__btn_active')
+            };
+        } else {
+            return requestForm
+        };
+    });
+});
