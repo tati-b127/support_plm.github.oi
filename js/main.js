@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 i.classList.remove('category__group_visible');
             };
             for (i of menuBtns) {
-                i.classList.remove('menu__btn_active')
+                i.classList.remove('menu__btn_active');
             };
         } else {
-            return requestForm
+            return requestForm;
         };
     });
 });

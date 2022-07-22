@@ -137,21 +137,33 @@ body {
 
 .header__nav {
     display: flex;
-    width: 10%;
+    /* position: relative; */
     justify-content: space-between;
 }
 
-.header__login {
+.header__login,
+.header__main {
+    position: relative;
     width: 40px;
     height: 40px;
     border-radius: 40px;
     border: none;
-    margin-right: 20px;
     background-color: #fff;
 }
 
-.header__login:last-child {
-    margin-right: 0;
+.header__login:hover,
+.header__main:hover {
+    background-color: #454C55;
+}
+
+.header__login {
+    margin-right: 30px;
+}
+
+.header__nav svg {
+    position: absolute;
+    width: 80%;
+    height: 80%;
 }
 
 
@@ -368,6 +380,10 @@ button {
     margin-bottom: 10px;
 }
 
+#formMessage {
+    resize: none;
+}
+
 .request__btn {
     padding: 20px 30px;
     border: 1px solid var(--color-main);
@@ -418,4 +434,160 @@ button {
     right: 0;
     bottom: 0;
     background: #f9faff;
+}
+
+
+/* ACCOUNT */
+
+.account {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 100px);
+}
+
+.account__block {
+    width: 600px;
+    padding: 50px;
+    background: var(--color-menu);
+    z-index: 100;
+}
+
+.account__user {
+    display: flex;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.account__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.account__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 60px;
+    background: #fff;
+    background-image: url(../img/user.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+.account__name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--color-descr);
+}
+
+.account__email {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-context);
+}
+
+.account__report {
+    margin-bottom: 50px;
+}
+
+.account__title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--color-descr);
+}
+
+.account__title_report {}
+
+.account__btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.account__btn {
+    width: 150px;
+    min-height: 90px;
+    font-size: 18px;
+    color: var(--color-main);
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: center, top;
+    transition: var(--transition-color-03s), var(--transition-bg-03s);
+}
+
+.account__btn:hover {
+    color: #fff;
+    background: var(--color-main);
+}
+
+.account__btn_hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.account__btn img {
+    height: 40px;
+    width: 40px;
+    transition: filter 0.3s ease;
+}
+
+.account__btn:hover img {
+    filter: brightness(100);
+}
+
+
+/* .account__btn_sent {
+    background-image: url(../img/sent.svg);
+}
+
+.account__btn_inwork {
+    background-image: url(../img/work.svg);
+}
+
+.account__btn_done {
+    background-image: url(../img/done.svg);
+}
+
+.account__btn_set {
+    background-image: url(../img/educ-set.svg);
+}
+
+.account__btn_completed {
+    background-image: url(../img/completed.svg);
+} */
+
+.account__test {}
+
+.account__title_test {}
+
+.report {
+    position: absolute;
+    left: -100%;
+    width: calc(100% - 600px);
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    background: #fff;
+    padding: 50px;
+    transition: left 0.3s ease-in;
+}
+
+.test {
+    position: absolute;
+    left: -100%;
+    height: calc(100vh - 100px);
+    width: calc(100% - 600px);
+    top: 0;
+    background: #fff;
+    padding: 50px;
+    transition: left 0.3s ease-in;
+}
+
+.visible {
+    left: 600px;
 }
