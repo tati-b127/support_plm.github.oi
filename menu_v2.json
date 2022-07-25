@@ -1,0 +1,49 @@
+[{
+        "id": "11",
+        "branchName": "Конструирование",
+        "description": "проблемы при моделировании в платформе 3DExperience",
+        "parentId": "",
+        "branchCode": "construction",
+        "children": [{
+                "id": "110",
+                "branchName": "Доступ/поиск объекта",
+                "description": "",
+                "parentId": "11",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "111",
+                "branchName": "Открытие объекта",
+                "description": "",
+                "parentId": "11",
+                "branchCode": "",
+                "children": ""
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "branchName": "Change Action",
+        "description": "проблемы при работе с процессами Change Action",
+        "parentId": "",
+        "branchCode": "change-action",
+        "children": [{
+                "id": "120",
+                "branchName": "Удаление недействительных связей",
+                "description": "",
+                "parentId": "12",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "121",
+                "branchName": "Исправление структуры объекта",
+                "description": "",
+                "parentId": "12",
+                "branchCode": "",
+                "children": ""
+            }
+        ]
+    }
+]

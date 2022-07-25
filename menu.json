@@ -1,0 +1,46 @@
+[{
+        "id": "construction",
+        "title": "Конструирование",
+        "description": "проблемы при моделировании в платформе 3DExperience"
+    },
+    {
+        "id": "change-action",
+        "title": "Change Action",
+        "description": "проблемы при работе с процессами Change Action"
+    },
+    {
+        "id": "projects-control",
+        "title": "Управление проектами",
+        "description": "проблемы при работе/синхронизации проектов"
+    },
+    {
+        "id": "kanban",
+        "title": "Kanban",
+        "description": "проблемы при работе c Kanban виджетом"
+    },
+    {
+        "id": "issue",
+        "title": "Issue",
+        "description": "проблемы при работе с процессами Issue"
+    },
+    {
+        "id": "access",
+        "title": "Доступ к платформе",
+        "description": "проблемы при входе в платформу 3DExperience"
+    },
+    {
+        "id": "licenses",
+        "title": "Лицензии",
+        "description": "проблемы/запросы, возникающие с лицензиями"
+    },
+    {
+        "id": "education",
+        "title": "Обучение",
+        "description": "заявки на проведение обучения"
+    },
+    {
+        "id": "suggestions",
+        "title": "Предложения",
+        "description": "предложения по улучшению платформы"
+    }
+]
