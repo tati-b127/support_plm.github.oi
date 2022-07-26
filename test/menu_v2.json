@@ -19,6 +19,46 @@
                 "parentId": "11",
                 "branchCode": "",
                 "children": ""
+            },
+            {
+                "id": "112",
+                "branchName": "Сохранение объекта",
+                "description": "",
+                "parentId": "11",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "113",
+                "branchName": "Чертежи и спецификации",
+                "description": "",
+                "parentId": "11",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "114",
+                "branchName": "Функции 3D-моделирования",
+                "description": "",
+                "parentId": "11",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "115",
+                "branchName": "ПКИ и материалы",
+                "description": "",
+                "parentId": "11",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "116",
+                "branchName": "Другое",
+                "description": "",
+                "parentId": "11",
+                "branchCode": "",
+                "children": ""
             }
         ]
     },
@@ -38,12 +78,282 @@
             },
             {
                 "id": "121",
-                "branchName": "Исправление структуры объекта",
+                "branchName": "Исправление структуры объектов",
+                "description": "",
+                "parentId": "12",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "122",
+                "branchName": "Продление срока согласования",
+                "description": "",
+                "parentId": "12",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "123",
+                "branchName": "Генерация ARCHDOC неправильной версии",
+                "description": "",
+                "parentId": "12",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "124",
+                "branchName": "Проблема с согласованием",
+                "description": "",
+                "parentId": "12",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "125",
+                "branchName": "Проблема с запуском",
+                "description": "",
+                "parentId": "12",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "126",
+                "branchName": "Другое",
                 "description": "",
                 "parentId": "12",
                 "branchCode": "",
                 "children": ""
             }
         ]
+    },
+    {
+        "id": "13",
+        "branchName": "Управление проектами",
+        "description": "проблемы при работе/синхронизации проектов",
+        "parentId": "",
+        "branchCode": "projects-control",
+        "children": [{
+                "id": "130",
+                "branchName": "Изменение Owner объекта",
+                "description": "",
+                "parentId": "13",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "131",
+                "branchName": "Удаление объекта",
+                "description": "",
+                "parentId": "13",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "132",
+                "branchName": "Другое",
+                "description": "",
+                "parentId": "13",
+                "branchCode": "",
+                "children": ""
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "branchName": "Kanban",
+        "description": "проблемы при работе c Kanban виджетом",
+        "parentId": "",
+        "branchCode": "kanban",
+        "children": [{
+                "id": "140",
+                "branchName": "Изменение Owner объекта",
+                "description": "",
+                "parentId": "14",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "141",
+                "branchName": "Настройка Dashboard для нового сотрудника",
+                "description": "",
+                "parentId": "14",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "142",
+                "branchName": "Работа с вложениями",
+                "description": "",
+                "parentId": "14",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "143",
+                "branchName": "Создание нового тега",
+                "description": "",
+                "parentId": "14",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "144",
+                "branchName": "Удаление объекта",
+                "description": "",
+                "parentId": "14",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "145",
+                "branchName": "Консультация нового сотрудника",
+                "description": "",
+                "parentId": "14",
+                "branchCode": "",
+                "children": ""
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "branchName": "Issue",
+        "description": "проблемы при работе с процессами Issue",
+        "parentId": "",
+        "branchCode": "issue",
+        "children": [{
+                "id": "150",
+                "branchName": "Изменение Owner объекта",
+                "description": "",
+                "parentId": "15",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "151",
+                "branchName": "Изменение жизненного цикла объекта",
+                "description": "",
+                "parentId": "15",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "152",
+                "branchName": "Удаление объекта",
+                "description": "",
+                "parentId": "15",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "153",
+                "branchName": "Другое",
+                "description": "",
+                "parentId": "15",
+                "branchCode": "",
+                "children": ""
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "branchName": "Доступ к платформе",
+        "description": "проблемы при входе в платформу 3DExperience",
+        "parentId": "",
+        "branchCode": "access",
+        "children": [{
+            "id": "160",
+            "branchName": "Ошибка доступа",
+            "description": "",
+            "parentId": "16",
+            "branchCode": "",
+            "children": ""
+        }]
+    },
+    {
+        "id": "17",
+        "branchName": "Лицензии",
+        "description": "проблемы/запросы, возникающие с лицензиями",
+        "parentId": "",
+        "branchCode": "licenses",
+        "children": [{
+                "id": "170",
+                "branchName": "Добавление/подключение новой лицензии",
+                "description": "",
+                "parentId": "17",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "171",
+                "branchName": "Проблемы с текущей лицензией",
+                "description": "",
+                "parentId": "17",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "172",
+                "branchName": "Проблемы с IGA GOST Drafting",
+                "description": "",
+                "parentId": "17",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "173",
+                "branchName": "Другое",
+                "description": "",
+                "parentId": "17",
+                "branchCode": "",
+                "children": ""
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "branchName": "Обучение",
+        "description": "заявки на проведение обучения",
+        "parentId": "",
+        "branchCode": "education",
+        "children": [{
+                "id": "180",
+                "branchName": "Базовый курс 3DExperience",
+                "description": "",
+                "parentId": "18",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "181",
+                "branchName": "Базовый курс Kanban",
+                "description": "",
+                "parentId": "18",
+                "branchCode": "",
+                "children": ""
+            },
+            {
+                "id": "182",
+                "branchName": "Базовый курс Change Action",
+                "description": "",
+                "parentId": "18",
+                "branchCode": "",
+                "children": ""
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "branchName": "Предложения",
+        "description": "предложения по улучшению платформы",
+        "parentId": "",
+        "branchCode": "suggestions",
+        "children": [{
+            "id": "190",
+            "branchName": "Предложения по улучшению",
+            "description": "",
+            "parentId": "19",
+            "branchCode": "",
+            "children": ""
+        }]
     }
 ]
