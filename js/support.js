@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const serverData = async() => {
-        const response = await fetch('https://github.com/tati-b127/support_plm.github.oi/blob/main/test/menu_v2.json', {
+        const response = await fetch('https://tati-b127.github.io/support_plm.github.oi/test/menu_v2.json', {
             method: 'GET',
             mode: 'no-cors',
             headers: {
