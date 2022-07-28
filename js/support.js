@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const categoryGroup = document.createElement('div');
             const categoryList = document.createElement('ul');
 
-            btnImg.src = `../img/${element.branchCode}.svg`;
+            btnImg.src = `https://tati-b127.github.io/support_plm.github.oi/img/${element.branchCode}.svg`;
             menuList.classList.add('menu__list');
             menuItem.classList.add('menu__item');
             menuBtn.classList.add('menu__btn');
